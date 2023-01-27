@@ -1,8 +1,7 @@
-const bar = document.getElementById("bar");
-const nav = document.getElementById("navbar");
+function openNav() {
+    document.getElementById("sideNav").classList.add("open");
+}
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
+function closeNav() {
+    document.getElementById("sideNav").classList.remove("open");
 }
